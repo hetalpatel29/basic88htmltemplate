@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Wbsite demo template</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .titleblock {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(31 29 29 / 80%);
+            display: inline-block;
+        }
+        
+        .titleblock .titleleft {
+            width: 350px;
+            display: inline-block;
+        }
+        
+        .titleblock h1 {
+            color: white;
+            font-size: 40px;
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            padding-left: 80px;
+            display: inline-block;
+            padding-top: 30px;
+        }
+        
+        .titleblock p {
+            color: white;
+            margin: 0;
+            font-size: 15px;
+            padding-left: 75px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .listblock {
+            display: inline-block;
+            margin-right: 100px;
+            width: 600px;
+            float: right;
+            padding-top: 30px;
+        }
+        
+        .titleblock ul {
+            display: inline;
+            float: right;
+            list-style-type: none;
+            background-color: black;
+            height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .titleblock ul li {
+            float: left;
+            width: 100px;
+            text-decoration: none;
+            vertical-align: middle;
+            line-height: 50px;
+            text-align: center;
+        }
+        
+        .titleblock ul li a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.692);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .titleblock li:hover {
+            background-color: rgba(255, 255, 255, 0.582);
+            color: black;
+        }
+        
+        .titleblock ul li a:hover {
+            color: black;
+        }
+        
+        .faciliesmainframe {
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        
+        .faciliesmainbox {
+            width: 100%;
+            height: 400px;
+            background-color: rgb(31 29 29 / 80%);
+        }
+        
+        .facilessubboxframe {
+            width: 100%;
+            margin-top: 50px;
+        }
+        
+        .faciliesbox {
+            width: 33.33%;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        
+        .facilessubbox {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(31 29 29 / 80%);
+            border: 5px solid #f1ebeb;
+        }
+        
+        .faciliesmainframe .faciliesmainbox p {
+            color: white;
+            font-size: 45px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            text-align: center;
+            padding-top: 15%;
+        }
+        
+        .facilessubboxframe .faciliesbox .facilessubbox p {
+            color: white;
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            padding-top: 20%;
+        }
+        
+        .facilessubboxframe .faciliesbox h2 {
+            color: #0a0a0a91;
+            font-size: 20px;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 7px;
+        }
+        
+        .facilessubboxframe p {
+            color: #0a0a0a91;
+            margin: 0;
+            font-size: 16px;
+            margin: 10px;
+            line-height: 1.5;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .facilessubboxframe h3 {
+            text-align: right;
+            color: darkorange;
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .facilessubboxframe .faciliessubframe {
+            width: 100%;
+        }
+        
+        .facilessubboxframe .faciliessubframe .Indonectetusbox {
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+            padding: 16px;
+        }
+        
+        .facilessubboxframe .faciliessubframe .Indonectetusbox h4 {
+            font-size: 30px;
+            color: #0a0a0a91;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 20px;
+        }
+        
+        .facilessubboxframe .faciliessubframe .Indonectetusbox .indonectetussubbox {
+            width: 100%;
+            height: 380px;
+            background-color: rgb(31 29 29 / 80%);
+            width: 100%;
+            height: 350px;
+            background-color: rgb(31 29 29 / 80%);
+            border: 5px solid #f1ebeb;
+            margin-top: 20px
+        }
+        
+        .facilessubboxframe .faciliessubframe .Indonectetusbox .indonectetussubbox p {
+            color: white;
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            padding-top: 25%;
+        }
+        
+        .spancolor {
+            color: darkorange;
+        }
+        
+        .linkblock {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(31 29 29 / 80%);
+            clear: both;
+            padding-left: 70px;
+            box-sizing: border-box;
+        }
+        
+        .linkblockbox {
+            width: 25%;
+            float: left;
+            box-sizing: border-box;
+        }
+        
+        .linkblocksubbox {
+            width: 100%;
+        }
+        
+        .linkblock .linkblockbox .linkblocksubbox h4 {
+            color: white;
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        
+        .linkblock .linkblockbox .linkblocksubbox p {
+            color: darkorange;
+            font-size: 15px;
+            line-height: 0.2;
+            margin-bottom: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .linkdivision {
+            width: 75%;
+            border-bottom: 1px solid gray;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+        }
+        
+        .footer p {
+            color: rgba(255, 255, 255, 0.438);
+            font-size: 15px;
+            font-weight: initial;
+            font-style: inherit;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            vertical-align: middle;
+            line-height: 50px;
+            display: inline;
+            padding-left: 40px;
+        }
+        
+        .footer span {
+            display: inline;
+            float: right;
+            vertical-align: middle;
+            line-height: 50px;
+            color: rgba(255, 255, 255, 0.438);
+            font-size: 15px;
+            font-weight: initial;
+            font-style: inherit;
+            padding-right: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="titleblock">
+        <div class="titleleft">
+            <h1>Basic 88</h1>
+            <p>free HTML5 Website Template</p>
+        </div>
+
+        <div class="listblock">
+            <ul>
+                <li><a href="#">TEXT LINK</a></li>
+                <li><a href="#">TEXT LINK</a></li>
+                <li><a href="#">TEXT LINK</a></li>
+                <li><a href="#">TEXT LINK</a></li>
+                <li><a href="#">TEXT LINK</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="faciliesmainframe">
+        <div class="faciliesmainbox">
+            <p>
+                960 x 360px
+            </p>
+
+        </div>
+        <div class="facilessubboxframe">
+            <div class="faciliesbox">
+                <div class="facilessubbox">
+                    <p>290 X 180px</p>
+
+                </div>
+
+                <h2>Indonectetus facilis</h2>
+                <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+                <h3>
+                    Read More >>
+                </h3>
+
+
+            </div>
+            <div class="faciliesbox">
+                <div class="facilessubbox">
+                    <p>290 X 180px</p>
+
+                </div>
+                <h2>Indonectetus facilis</h2>
+                <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+                <h3>
+                    Read More >>
+                </h3>
+
+
+            </div>
+            <div class="faciliesbox">
+                <div class="facilessubbox">
+                    <p>290 X 180px</p>
+
+                </div>
+                <h2>Indonectetus facilis</h2>
+                <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+                <h3>
+                    Read More >>
+                </h3>
+
+
+            </div>
+            <div class="faciliessubframe">
+                <div class="Indonectetusbox">
+                    <h4>Indonectetus facilis leo nibh</h4>
+                    <p>This is a W3C standards compliant free HTML5 website template from <span class="spancolor">os Templates</span>. This template is distributed using a <span class="spancolor">website template licence</span> . </p>
+                    </p>
+                    <p>
+                        You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files. For more HTML5 templates visit free <span class="spancolor">website templates</span>.
+                    </p>
+                    <h3>
+                        Read More >>
+                    </h3>
+                </div>
+                <div class="Indonectetusbox">
+                    <div class="indonectetussubbox">
+                        <p>450 x 250px</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="linkblock">
+        <div class="linkblockbox">
+            <div class="linkblocksubbox">
+                <h4>
+                    LINK BLOCK
+                </h4>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="linkblockbox">
+            <div class="linkblocksubbox">
+                <h4>
+                    LINK BLOCK
+                </h4>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="linkblockbox">
+            <div class="linkblocksubbox">
+                <h4>
+                    LINK BLOCK
+                </h4>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="linkblockbox">
+            <div class="linkblocksubbox">
+                <h4>
+                    LINK BLOCK
+                </h4>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="linkdivision">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <p>Copyright © 2009 - 2021 - All Rights Reserved - Domain Name</p>
+        <span> Template by OS Templates</span>
+
+
+    </div>
+
+</body>
+
+</html>
